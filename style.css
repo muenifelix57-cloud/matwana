@@ -103,7 +103,7 @@ img.circle {
 
 .blog-post p {
     margin-bottom: 24px;
-    color:
+    color: white
 }
 
 .meta {
@@ -117,7 +117,11 @@ img.circle {
     margin: 40px 0;
     display: grid;
     gap: 16px;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto auto;
+    video {
+        /* width: 50%; */
+        /* height: 400px; */
+    }
 }
 
 .image-grid.two-column {
@@ -126,6 +130,10 @@ img.circle {
 
 .image-grid.three-column {
     grid-template-columns: repeat(3, 1fr);
+}
+
+.image-grid.four-column {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .image-placeholder {
@@ -200,4 +208,19 @@ blockquote {
         font-size: 1rem;
         padding: 16px 16px;
     }
+}
+
+.footer {
+    background: linear-gradient(135deg, #ec5c14 0%, #d4ac1c 100%);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 80px;
+    border-top: 4px solid #FF8C00;
+}
+
+.footer p {
+    font-size: 0.95rem;
+    margin: 0;
+    font-weight: 500;
 }
