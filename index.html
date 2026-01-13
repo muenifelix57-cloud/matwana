@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matatu Culture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="title">Kenyan Matatu Culture</h1>
+            <p class="subtitle">Stories from Kenya's iconic transport</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="blog-post">
+            <h2>The Art of Movement</h2>
+            <!-- <p class="meta">January 13, 2026 • 5 min read</p> -->
+
+            <div class="image-grid">
+                <img src="assets/mat5.jpg" alt="Matatu culture image" class="rect-large">
+            </div>
+
+            <p>Matatus are the lifeblood of Kenya's transportation system. These minibuses are more than just vehicles—they're moving art galleries, cultural hubs, and the heartbeat of urban and rural life. Every journey tells a story, every design speaks
+                a language.</p>
+
+            <h3>Beyond Transportation</h3>
+            <div class="image-grid two-column">
+                <img src="assets/mat14.jpg" alt="Matatu transportation" class="square">
+                <img src="assets/mat2.jpg" alt="Kenyan matatu design" class="rect-vertical">
+            </div>
+
+            <p>Decorated with vibrant colors, religious inscriptions, and artistic designs, matatus represent the creativity, resilience, and joy of Kenyan culture. From "God is Good" to personalized messages, each vehicle becomes a canvas for self-expression
+                and community identity.</p>
+
+            <h3>Cultural Significance</h3>
+            <div class="image-grid three-column">
+                <img src="assets/mat7.jpg" alt="Matatu art 1" class="circle">
+                <img src="assets/mat6.jpg" alt="Matatu art 2" class="square">
+                <img src="assets/interior.jpg" alt="Matatu art 3" class="circle">
+            </div>
+
+            <p>Matatus are known for their bold aesthetics, spiritual messages, and intricate artwork that reflects the personality of their owners and operators. They serve as mobile galleries showcasing African creativity, entrepreneurship, and the unbreakable
+                spirit of Kenya's people.</p>
+
+            <blockquote>
+                "Every matatu is a masterpiece, a reflection of the driver's dreams and the community's pulse."
+            </blockquote>
+
+            <p>The matatu scene continues to evolve, blending tradition with modernity, spirituality with commercial vibrancy, and local pride with international recognition. It's more than just a ride—it's a cultural institution.</p>
+        </article>
+    </main>
+
+    <script>
+        // Randomize positions slightly for visual interest
+        document.querySelectorAll('.image-container').forEach(el => {
+            const randomOffset = (Math.random() - 0.5) * 4;
+            el.style.setProperty('--left', `calc(${el.style.getPropertyValue('--left')} + ${randomOffset}%)`);
+        });
+    </script>
+</body>
+
+</html>
